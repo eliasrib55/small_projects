@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">My Own Survey Form</h1>
+      <p id="description">Thanks for accessing this initial HTML/CSS project.</p>
+      <form id="survey-form" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Ex: Elias Eduardo Ribeiro da Silva" required></label>
+        <label id="number-label">Enter your age: <input id="number"  type="number" min="12" max="120" placeholder="Ex: 18" required></label>
+        <label id="email-label">Enter your email (optional): <input id="email" type="email" placeholder="Ex: aaaaa.aa@gmail.com" required></label>
+        <label>Enter your undergraduate course (or interest): <input id="grad" type="text" placeholder="Ex: Computer Science Undergrad"></label>
+      </fieldset>
+       <fieldset><label>Select your favourite field of research: </label>
+      <label><input type="radio" name="field" value="math">Mathematics</label>
+      <label><input type="radio" name="field" value="bio">Biology</label>
+      <label><input type="radio" name="field" value="tech">Technology</label>
+      <label><input type="radio" name="field" value="astroph">Astrophysics</label>
+      <label>Other: <input type="text" placeholder="Ex: Nanotech"></label>
+      </fieldset>
+        <fieldset>
+          <label>How did you hear about this survey?<select id="dropdown">
+            <option value="">(none)</option>
+            <option value="">Instagram</option>
+            <option value="">Random researchs on Google</option>
+            <option value="">YouTube videos about science</option>
+</select>
+             </label>
+             <label>Select your favourite tech enterprises: </label>
+             <label><input type="checkbox" id="microsoft" value="microsoft" checked>Microsoft</label>
+             <label><input type="checkbox" id="apple" value="apple">Apple</label>
+             <label><input type="checkbox" id="sony" value="sony">Sony</label>
+             <label><input type="checkbox" id="lg" value="lg">LG</label>
+
+          
+        </fieldset>
+      <label>If you have any aditional comments, please add below: <textarea name="comments" rows="5" cols="35" placeholder="Add your comments here!"></textarea></label>
+      <input type="submit" value="Submit" id="submit">
+
+      </form>
+
+      </body>
+  </html>
